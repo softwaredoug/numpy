@@ -1,6 +1,7 @@
 import numpy as np
 import numpy.typing as npt
 
+i8: np.int64
 f8: np.float64
 AR_f8: npt.NDArray[np.float64]
 AR_i8: npt.NDArray[np.int64]
@@ -66,3 +67,14 @@ reveal_type(np.matmul.signature)  # E: Literal['(n?,k),(k,m?)->(n?,m?)']
 reveal_type(np.matmul.identity)  # E: None
 reveal_type(np.matmul(AR_f8, AR_f8))  # E: Any
 reveal_type(np.matmul(AR_f8, AR_f8, axes=[(0, 1), (0, 1), (0, 1)]))  # E: Any
+
+reveal_type(np.bit_count.__name__)  # E: Literal['bit_count']
+reveal_type(np.bit_count.ntypes)  # E: Literal[11]
+reveal_type(np.bit_count.identity)  # E: None
+reveal_type(np.bit_count.nin)  # E: Literal[1]
+reveal_type(np.bit_count.nout)  # E: Literal[1]
+reveal_type(np.bit_count.nargs)  # E: Literal[2]
+reveal_type(np.bit_count.signature)  # E: None
+reveal_type(np.bit_count.identity)  # E: None
+reveal_type(np.bit_count(i8))  # E: Any
+reveal_type(np.bit_count(AR_i8))  # E: Any
