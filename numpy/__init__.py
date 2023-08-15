@@ -130,53 +130,53 @@ else:
         arctan2, arctanh, argmax, argmin, argpartition, argsort, argwhere,
         around, array, array2string, array_equal, array_equiv, array_repr,
         array_str, asanyarray, asarray, ascontiguousarray, asfortranarray,
-        atleast_1d, atleast_2d, atleast_3d, base_repr, binary_repr, 
+        atleast_1d, atleast_2d, atleast_3d, base_repr, binary_repr,
         bitwise_and, bitwise_not, bitwise_or, bitwise_xor, block, bool_,
-        broadcast, busday_count, busday_offset, busdaycalendar, byte, bytes_,
-        can_cast, cbrt, cdouble, ceil, cfloat, char, character, chararray,
-        choose, clip, clongdouble, clongfloat, compare_chararrays, complex_,
-        complexfloating, compress, concatenate, conj, conjugate, convolve,
-        copysign, copyto, correlate, cos, cosh, count_nonzero, cross, csingle,
-        cumprod, cumproduct, cumsum, datetime64, datetime_as_string, 
-        datetime_data, deg2rad, degrees, diagonal, divide, divmod, dot, 
+        bitwise_count, broadcast, busday_count, busday_offset, busdaycalendar,
+        byte, bytes_, can_cast, cbrt, cdouble, ceil, cfloat, char, character,
+        chararray, choose, clip, clongdouble, clongfloat, compare_chararrays,
+        complex_, complexfloating, compress, concatenate, conj, conjugate,
+        convolve, copysign, copyto, correlate, cos, cosh, count_nonzero, cross,
+        csingle, cumprod, cumproduct, cumsum, datetime64, datetime_as_string,
+        datetime_data, deg2rad, degrees, diagonal, divide, divmod, dot,
         double, dtype, e, einsum, einsum_path, empty, empty_like, equal,
-        errstate, euler_gamma, exp, exp2, expm1, fabs, find_common_type, 
-        flatiter, flatnonzero, flexible, 
-        float_, float_power, floating, floor, floor_divide, fmax, fmin, fmod, 
-        format_float_positional, format_float_scientific, format_parser, 
-        frexp, from_dlpack, frombuffer, fromfile, fromfunction, fromiter, 
-        frompyfunc, fromstring, full, full_like, gcd, generic, geomspace, 
-        get_printoptions, getbufsize, geterr, geterrcall, greater, 
-        greater_equal, half, heaviside, hstack, hypot, identity, iinfo, 
+        errstate, euler_gamma, exp, exp2, expm1, fabs, find_common_type,
+        flatiter, flatnonzero, flexible,
+        float_, float_power, floating, floor, floor_divide, fmax, fmin, fmod,
+        format_float_positional, format_float_scientific, format_parser,
+        frexp, from_dlpack, frombuffer, fromfile, fromfunction, fromiter,
+        frompyfunc, fromstring, full, full_like, gcd, generic, geomspace,
+        get_printoptions, getbufsize, geterr, geterrcall, greater,
+        greater_equal, half, heaviside, hstack, hypot, identity, iinfo,
         indices, inexact, inf, infty, inner, int_,
         intc, integer, invert, is_busday, isclose, isfinite, isfortran,
         isinf, isnan, isnat, isscalar, issctype, issubdtype, lcm, ldexp,
-        left_shift, less, less_equal, lexsort, linspace, little_endian, log, 
-        log10, log1p, log2, logaddexp, logaddexp2, logical_and, logical_not, 
-        logical_or, logical_xor, logspace, longcomplex, longdouble, 
-        longfloat, longlong, matmul, max, maximum, maximum_sctype, 
-        may_share_memory, mean, min, min_scalar_type, minimum, mod, 
-        modf, moveaxis, multiply, nan, nbytes, ndarray, ndim, nditer, 
+        left_shift, less, less_equal, lexsort, linspace, little_endian, log,
+        log10, log1p, log2, logaddexp, logaddexp2, logical_and, logical_not,
+        logical_or, logical_xor, logspace, longcomplex, longdouble,
+        longfloat, longlong, matmul, max, maximum, maximum_sctype,
+        may_share_memory, mean, min, min_scalar_type, minimum, mod,
+        modf, moveaxis, multiply, nan, nbytes, ndarray, ndim, nditer,
         negative, nested_iters, newaxis, nextafter, nonzero, not_equal,
         number, obj2sctype, object_, ones, ones_like, outer, partition,
-        pi, positive, power, printoptions, prod, product, promote_types, 
+        pi, positive, power, printoptions, prod, product, promote_types,
         ptp, put, putmask, rad2deg, radians, ravel, rec, recarray, reciprocal,
-        record, remainder, repeat, require, reshape, resize, result_type, 
-        right_shift, rint, roll, rollaxis, round, round_, sctype2char, 
+        record, remainder, repeat, require, reshape, resize, result_type,
+        right_shift, rint, roll, rollaxis, round, round_, sctype2char,
         sctypeDict, sctypes, searchsorted, set_printoptions,
         set_string_function, setbufsize, seterr, seterrcall, shape,
-        shares_memory, short, sign, signbit, signedinteger, sin, single, 
-        singlecomplex, sinh, size, sometrue, sort, spacing, sqrt, square, 
+        shares_memory, short, sign, signbit, signedinteger, sin, single,
+        singlecomplex, sinh, size, sometrue, sort, spacing, sqrt, square,
         squeeze, stack, std, str_, string_, subtract, sum, swapaxes, take,
-        tan, tanh, tensordot, timedelta64, trace, transpose, 
-        true_divide, trunc, typecodes, ubyte, ufunc, uint, uintc, ulonglong, 
-        unicode_, unsignedinteger, ushort, var, vdot, void, vstack, where, 
+        tan, tanh, tensordot, timedelta64, trace, transpose,
+        true_divide, trunc, typecodes, ubyte, ufunc, uint, uintc, ulonglong,
+        unicode_, unsignedinteger, ushort, var, vdot, void, vstack, where,
         zeros, zeros_like, _get_promotion_state, _set_promotion_state,
         int8, int16, int32, int64, intp, uint8, uint16, uint32, uint64, uintp,
         float16, float32, float64, complex64, complex128
     )
 
-    # NOTE: It's still under discussion whether these aliases 
+    # NOTE: It's still under discussion whether these aliases
     # should be removed.
     for ta in ["float96", "float128", "complex192", "complex256"]:
         try:
@@ -200,7 +200,7 @@ else:
         index_exp, info, insert, interp, intersect1d, iscomplex,
         iscomplexobj, isin, isneginf, isreal, isrealobj, issubclass_,
         issubsctype, iterable, ix_, kaiser, kron, load, loadtxt, mask_indices,
-        median, meshgrid, mgrid, mintypecode, msort, nan_to_num, 
+        median, meshgrid, mgrid, mintypecode, msort, nan_to_num,
         nanargmax, nanargmin, nancumprod, nancumsum, nanmax, nanmean,
         nanmedian, nanmin, nanpercentile, nanprod, nanquantile, nanstd,
         nansum, nanvar, ndenumerate, ndindex, ogrid, packbits, pad,
@@ -220,10 +220,10 @@ else:
         asmatrix, bmat, mat, matrix
     )
 
-    # public submodules are imported lazily, 
+    # public submodules are imported lazily,
     # therefore are accessible from __getattr__
     __numpy_submodules__ = {
-        "linalg", "fft", "dtypes", "random", "polynomial", "ma", 
+        "linalg", "fft", "dtypes", "random", "polynomial", "ma",
         "exceptions", "lib", "ctypeslib", "testing", "typing",
         "array_api", "f2py", "distutils", "test"
     }
@@ -272,7 +272,7 @@ else:
     core.getlimits._register_known_types()
 
     __all__ = list(
-        __numpy_submodules__ | set(core.__all__) | set(lib.__all__) | 
+        __numpy_submodules__ | set(core.__all__) | set(lib.__all__) |
         set(_mat.__all__) | {"show_config", "__version__"}
     )
 
@@ -342,15 +342,15 @@ else:
                              "{!r}".format(__name__, attr))
 
     def __dir__():
-        # TODO: move away from using `globals` to a statically defined 
-        # list. With `globals`, when running in a testing context 
+        # TODO: move away from using `globals` to a statically defined
+        # list. With `globals`, when running in a testing context
         # a bunch of random names fall into global scope, such as
         # `conftest` or `distutils`.
         public_symbols = (
             globals().keys() | __numpy_submodules__
         )
         public_symbols -= {
-            "core", "matrixlib", "matlib", "tests", "conftest", "version", 
+            "core", "matrixlib", "matlib", "tests", "conftest", "version",
             "compat"
             }
         return list(public_symbols)
@@ -419,7 +419,7 @@ else:
     def hugepage_setup():
         """
         We usually use madvise hugepages support, but on some old kernels it
-        is slow and thus better avoided. Specifically kernel version 4.6 
+        is slow and thus better avoided. Specifically kernel version 4.6
         had a bug fix which probably fixed this:
         https://github.com/torvalds/linux/commit/7cf91a98e607c2f935dbcc177d70011e95b8faff
         """
@@ -428,7 +428,7 @@ else:
             # If there is an issue with parsing the kernel version,
             # set use_hugepage to 0. Usage of LooseVersion will handle
             # the kernel version parsing better, but avoided since it
-            # will increase the import time. 
+            # will increase the import time.
             # See: #16679 for related discussion.
             try:
                 use_hugepage = 1
